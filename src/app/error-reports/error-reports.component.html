@@ -1,0 +1,22 @@
+<h1>Error Report App</h1>
+<div>
+  <table border='1' width="100%" style="border-collapse: collapse">
+    <tr>
+      <th>ID</th>
+      <th>HOST</th>
+      <th>CODE</th>
+      <th>MESSAGE</th>
+      <th>CREATED AT</th>
+      <th>UPDATED AT</th>
+    </tr>
+
+    <tr *ngFor="let errorReport of errorReports">
+      <td>{{errorReport.id}}</td>
+      <td>{{errorReport.host}}</td>
+      <td>{{errorReport.code}}</td>
+      <td>{{errorReport.message}}</td>
+      <td>{{errorReport.createdAt}}</td>
+      <td>{{errorReport.updatedAt}}</td>
+    </tr>
+  </table>
+</div>
